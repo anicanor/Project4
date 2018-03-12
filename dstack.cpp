@@ -85,8 +85,7 @@ void Dstack::print(){
         Node *ptr = top;
         while (ptr!=NULL){
                 
-                cout<<prt->m_value;
+                cout<<ptr->m_value;
                 ptr = ptr->m_next;
-                num++;
         }
 }
