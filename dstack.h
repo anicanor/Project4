@@ -18,6 +18,7 @@ class Dstack{
                 bool pop(double &value);
                 int size();
                 bool empty();
+                void print();
 
         private:
                 //Node declaration
