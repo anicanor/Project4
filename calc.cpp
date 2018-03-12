@@ -155,7 +155,7 @@ void exponent(double value1, double value2){
         	error();
     	}
     	result = pow(value1, value2);
-    	if(isinf(result){
+    	if(isinf(result)){
       
         	error();
     	}
@@ -179,8 +179,8 @@ bool checkIfDecimal(double input){
 	num = changer.str();
 	int numLength = num.length();
   
-	for(int i = 0; i < num_length; i++){
-    	if(number[i] == '.'){ //Looks for any period, returns true if there is (confirms it's a decimal). If not, false
+	for(int i = 0; i < numLength; i++){
+    	if(num[i] == '.'){ //Looks for any period, returns true if there is (confirms it's a decimal). If not, false
     	
         	return true;
     	}
