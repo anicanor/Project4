@@ -18,8 +18,8 @@ Dstack::Dstack(){
 Dstack::~Dstack(){
         
         Node *ptr = top;
-        while (ptr != NULL)
-        {
+        while (ptr != NULL){
+                
                 Node *temp;
                 temp = ptr;
                 ptr = ptr->m_next;
@@ -56,13 +56,13 @@ void Dstack::push (double value){
 int Dstack::size(){
         
         int num = 0;
-        if (top==NULL)
-        {
+        if (top==NULL){
+                
                 return num;
         }
         Node *ptr = top;
-        while (ptr!=NULL)
-        {
+        while (ptr!=NULL){
+                
                 ptr = ptr->m_next;
                 num++;
         }
@@ -77,5 +77,16 @@ bool Dstack::empty(){
         }else{
                 
                 return false;
+        }
+}
+
+void Dstack::print(){
+        
+        Node *ptr = top;
+        while (ptr!=NULL){
+                
+                cout<<prt->m_value;
+                ptr = ptr->m_next;
+                num++;
         }
 }
