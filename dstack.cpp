@@ -26,7 +26,7 @@ Dstack::~Dstack(){
                 delete temp;
         }
 }
-
+//Removes from the stack
 bool Dstack::pop (double &value){
         
         if (top==NULL){
@@ -47,12 +47,12 @@ bool Dstack::pop (double &value){
         delete temp;
         return true;
 }
-
+//Adds to the stack
 void Dstack::push (double value){
         
         top = new Node (value, top );
 }
-
+//Gives the stack's size
 int Dstack::size(){
         
         int num = 0;
@@ -68,7 +68,7 @@ int Dstack::size(){
         }
         return num;
 }
-
+//Clears out the stack
 bool Dstack::empty(){
         
         if (top==NULL){
@@ -79,13 +79,9 @@ bool Dstack::empty(){
                 return false;
         }
 }
-
+//Prints the top of the stack. Chose to do this since in this project, I should only be printing out one value
 void Dstack::print(){
         
         Node *ptr = top;
-        while (ptr!=NULL){
-                
-                cout<<ptr->m_value;
-                ptr = ptr->m_next;
-        }
+        cout<<ptr->m_value;
 }
