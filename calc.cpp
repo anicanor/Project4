@@ -172,19 +172,19 @@ void error(){
 //Function that checks if the value was decimal. True if it was, false if it wasn't
 bool checkIfDecimal(double input){
 
-  //Asked a friend for advice on this. They sent me some resources to help check this stuff, and I used them as reference
+  //Used online resources to help check this stuff, and I used them as reference
 	ostringstream changer;
-  string num;
+ 	string num;
 	changer << input;
 	num = changer.str();
 	int numLength = num.length();
   
-	for(int i = 0; i < numLength; i++){
-    	if(num[i] == '.'){ //Looks for any period, returns true if there is (confirms it's a decimal). If not, false
+		for(int i = 0; i < numLength; i++){
+    			if(num[i] == '.'){ //Looks for any period, returns true if there is (confirms it's a decimal). If not, false
     	
-        	return true;
-    	}
-	}
+        			return true;
+    			}
+		}
 	return false;
 }
 
