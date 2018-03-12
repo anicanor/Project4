@@ -83,5 +83,5 @@ bool Dstack::empty(){
 void Dstack::print(){
         
         Node *ptr = top;
-        cout<<ptr->m_value;
+        cout<<ptr->m_value<<endl;
 }
